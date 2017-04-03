@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,20 +13,16 @@ namespace ConsoleApp2
     /// </summary>
     public  class Filter
     {
-        private string pathlist;
-        public string Pathlist { get { return pathlist; } set { pathlist = value; } }
-        private string pathfilter;
-        public string Pathfilter { get { return pathfilter; } set { pathfilter = value; } }
-       
-        public  List<Student>  Filterlist(List<Student> objList)
+      
+        public static  List<Student>  FilterList(List<Student> objList,string pathFilter)
         {
            List<Student>temp=new List<Student>();
            Parser parser=new Parser();
-           string[] filterlines = parser.Parserfilter(this.pathfilter);
+           string[] filterlines = parser.ParserFilter(pathFilter);
            string[] birth = filterlines[2].Split(' ');
-           int birthfrom=Int32.Parse(birth[0]);
+           int birthFrom=Int32.Parse(birth[0]);
            int tobirth=Int32.Parse(birth[1]);
-           temp = objList.FindAll(el =>el.Birth>birthfrom && el.Birth<tobirth);
+           temp = objList.FindAll(el => el.Name.Contains(filterlines[0].Remove(3)) && el.Birth>birthFrom && el.Birth<tobirth && el.Surname.Contains(filterlines[1].Remove(3)) && el.Phone.Contains(filterlines[4]));
             return temp;
         }
        
