@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,7 @@ namespace ConsoleApp2
  public  class Parser
     {
 
-        public string[] Parserlist(string path)
+        public string[] ParserList(string path)
         {
 
             string text = System.IO.File.ReadAllText(path);
@@ -21,7 +21,7 @@ namespace ConsoleApp2
 
         }
 
-        public string[] Parserfilter(string path)
+        public string[] ParserFilter(string path)
         {
             string textfilter = System.IO.File.ReadAllText(path);
             string[] linesfilter = textfilter.Split('\n');
