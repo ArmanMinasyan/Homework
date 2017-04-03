@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,7 @@ namespace ConsoleApp2
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public Student StudentCreator(string obj)
+        private Student StudentCreator(string obj)
         {
 
             {
@@ -35,11 +35,11 @@ namespace ConsoleApp2
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
-        public List<Student> Createlist(string path)
+        public List<Student> CreateStudentList(string path)
         {
             Parser temp=new Parser();
             string[] lines =
-            temp.Parserfilter(path);
+            temp.ParserFilter(path);
             List<Student> list=new List<Student>();
             for (int i = 0; i < lines.Length-2; ++i)
             {
@@ -47,5 +47,6 @@ namespace ConsoleApp2
             }
             return list;
         }
+      
     }
 }
