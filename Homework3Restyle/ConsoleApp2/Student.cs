@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,15 +9,15 @@ namespace ConsoleApp2
   public   class Student
     {
         private string name;
-        public string Name { get{return name; } set { name = value; } }
+        public string Name { get; set; }
         private string surname;
-        public string Surname { get { return surname; } set { surname = value; } }
+        public string Surname { get; set;  }
         private int birth;
-        public int  Birth { get { return birth; } set { birth = value; } }
+        public int  Birth { get; set; }
         private int knowoflanguage;
-        public int Knowoflanguage { get { return knowoflanguage; } set { knowoflanguage = value; } }
+        public int Knowoflanguage { get; set; }
         private string phone;
-        public string Phone { get { return phone; } set { phone = value; } }
+        public string Phone {  get; set; }
 
         public void Print()
         {
