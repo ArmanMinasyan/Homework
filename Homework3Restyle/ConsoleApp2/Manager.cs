@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,19 +10,20 @@ namespace ConsoleApp2
     /// <summary>
     /// method for start to filter
     /// </summary>
-    class Manager
+   public static class Manager
     {
-        public List<Student> Begin(string pathl,string pathf)//path of list and path of filter
+        public static void Run(string pathl,string pathf)//path of list and path of filter
         {
             List<Student> temp = new List<Student>();
             List<Student> temp1 = new List<Student>();
-            Filter filter = new Filter();
-            filter.Pathlist = pathl;
-            filter.Pathfilter = pathf;
             Factory factory = new Factory();
-            temp=  factory.Createlist(filter.Pathlist);
-            temp1 = filter.Filterlist(temp);
-            return temp1;
+            temp=  factory.CreateStudentList(pathl);
+            temp1 = Filter.FilterList(temp,pathf);
+            foreach (var el in temp1)
+            {
+                el.Print();
+            }
         }
+      
     }
 }
