@@ -13,11 +13,7 @@ namespace ConsoleApplication1
     public static class Avtorizator
     {
         public static bool Login(User obj)
-        {
-            if (obj.avtorization)
-                return true;
-            else return false;
-        }
+        {return obj.avtorization;}
     
     }
  
