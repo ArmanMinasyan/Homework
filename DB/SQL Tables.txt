@@ -1,0 +1,73 @@
+
+Create table Driver 
+(numberkey int not null,
+  name nvarchar(25)
+Primary key (numberkey))
+
+Create table Car(
+Numbercarkey int not null,
+carname nvarchar(20)
+Primary key (Numbercarkey))
+
+Create Table Order(
+Ord_id int,
+Timestartkey  date time not null,
+Requsettimekey  date time not null,
+Numbercarkey int foreign key References Car(Numbercarkey) not null
+d_id int foreign key References Dispetcher(d_id) not null
+endtime date time 
+Primary key(Ord_id))
+
+
+Create table Park
+(
+park_id int not null,
+Xkey int not null,
+Ykey int not null,
+Xkey int not null,
+Ykey int not null,
+Primary key (park_id))
+
+Create table Coordinat 
+(
+Coord_id int not null,
+Xkey int not null,
+Ykey int not null,
+Primary key (Coord_id))
+
+Create Table Dispetcher (
+d_id int,
+Surname nvarchar(25) not null,
+name nvarcahr(25),
+Primary key (d_id))
+
+*********************************************
+Create Table CAr&Driver(
+CarDrive_id int not null,
+numberkey int foreign key References Driver(numberkey)not null,
+Numbercarkey int foreign key References Car (numbercarkey) not null,
+Starttime date time  not null,
+Endtime date time not null,
+Primary key (Cardrive_id ))
+
+Create Table ORder&Car(
+Ordercar_id int not null,
+Numbercarkey int foreign key References Car (numbercarkey) not null,
+Ord_id int foreign key References Order (ORd_id) not null,
+Starttime datetime not null,
+Endtime datetime not null,
+Requesttime datetime,
+Primary key (Ordercar_id))
+
+Create Table Order&Coord(
+OrderCoord_id int not null,
+Ord_id int Foreign key References Order (Ord_id) not null,
+Coord_id int Foreign key References Coordinat (Coord_id) not null,
+Primary key(OrderCoord_id))
+
+Create Table Coord&Car(
+Coordcar_id int not null,
+Numbercarkey int not null,
+Coord_id int Foreign key References Coordinat(Coord_id) not null,
+Time datetime,
+Primary key (Coordcar_id))

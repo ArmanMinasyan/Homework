@@ -1,0 +1,16 @@
+
+Driver(Numberkey,name)
+Car(Numbercarkey,carname)
+Car+Driver(Numbercarkey,Numberkey,Timestart,Timeend)
+
+Dispetcher(name,Surname)
+Dispetcher+Driver(Numberkey,Surname,name,)
+Dispetcher+Car(numbercarkey,Surname,name)
+
+Order(Starttimekey,Requsettime,Numbercarkey, Surname,endtime)
+Order+Car(Starttime,Requesttime,Numbercarkey,endtime)
+Order+Coordinates(Requsettime,Starttime,numbercarkey,X,Y,endtime)
+
+Coordinates(X,Y)
+Coordinat+Car(X,Y,Time,Numberkey)
+Park(Xkey,Ykey,Xkey,Ykey)
