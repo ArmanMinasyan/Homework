@@ -13,10 +13,10 @@ Create Table Order(
 Ord_id int,
 Timestartkey  date time not null,
 Requsettimekey  date time not null,
-Numbercarkey int foreign key References Car(Numbercarkey) not null
+Numbercarkey int not null
 d_id int foreign key References Dispetcher(d_id) not null
 endtime date time 
-Primary key(Ord_id))
+Primary key(Ord_id,Numbercarkey))
 
 
 Create table Park
