@@ -1,0 +1,11 @@
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\bin\Debug\DbFilter.exe.config
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\bin\Debug\DbFilter.exe
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\bin\Debug\DbFilter.pdb
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\Interop.DtrHostLib.dll
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.csproj.ResolveComReference.cache
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.Form1.resources
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.Properties.Resources.resources
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.csproj.GenerateResource.Cache
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.exe
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.pdb
+C:\Users\Arman\Source\Repos\Homework2\DbFilter\DbFilter\obj\Debug\DbFilter.csprojResolveAssemblyReference.cache
